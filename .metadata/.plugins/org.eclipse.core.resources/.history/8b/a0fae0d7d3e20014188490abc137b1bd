@@ -1,5 +1,0 @@
-package test.activemq.sender;
-
-public class ActiveMQQueueSender {
-
-}

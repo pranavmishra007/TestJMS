@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename resource &apos;activemq.queue.sender&apos; to &apos;ActiveMQQueueSender&apos;" description="Rename resource &apos;activemq.queue.sender&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/activemq.queue.sender" name="ActiveMQQueueSender" stamp="1429035440035" updateReferences="true"/>
-</session>

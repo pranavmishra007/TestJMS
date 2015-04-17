@@ -1,9 +1,0 @@
-package test.activemq;
-
-public class MQApplication {
-	
-	public static void main(String[] args) {
-		
-	}
-
-}
