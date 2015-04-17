@@ -1,0 +1,38 @@
+package test.activemq.sender;
+
+import javax.jms.ConnectionFactory;
+import javax.jms.JMSException;
+
+import org.apache.activemq.ActiveMQConnectionFactory;
+
+public class ActiveMQQueueSender {
+
+	private String brokerURL;
+	private String userName;
+	private String password;
+
+	public ActiveMQQueueSender(final String serverURL) {
+		this.brokerURL = serverURL;
+	}
+
+	public void sendMessage(final String queueName, final String textMessage) {
+		ConnectionFactory connectionFactory = new ActiveMQConnectionFactory(
+				userName, password, brokerURL);
+		try {
+			connectionFactory.createConnection();
+		} catch (JMSException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+
+	public String getServerURL() {
+		return brokerURL;
+	}
+
+	public void setServerURL(String serverURL) {
+		this.brokerURL = serverURL;
+	}
+
+}

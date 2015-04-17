@@ -1,0 +1,5 @@
+package test.activemq;
+
+public class MQApplication {
+
+}

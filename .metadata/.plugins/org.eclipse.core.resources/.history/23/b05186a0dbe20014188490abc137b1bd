@@ -1,0 +1,12 @@
+package test.activemq;
+
+import test.activemq.sender.ActiveMQQueueSender;
+
+public class MQApplication {
+	
+	public static void main(String[] args) {
+		
+		ActiveMQQueueSender activeMQQueueSender = new ActiveMQQueueSender("tcp://localhost:61616","admin","admin");
+	}
+
+}

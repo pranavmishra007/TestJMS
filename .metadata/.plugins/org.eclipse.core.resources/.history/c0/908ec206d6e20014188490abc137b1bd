@@ -1,0 +1,22 @@
+package test.activemq.sender;
+
+public class ActiveMQQueueSender {
+	
+	private String serverURL;
+	
+	public ActiveMQQueueSender(final String serverURL) {
+		this.serverURL = serverURL;
+	}
+	
+	public void sendMessage()
+
+	
+	public String getServerURL() {
+		return serverURL;
+	}
+
+	public void setServerURL(String serverURL) {
+		this.serverURL = serverURL;
+	}
+
+}

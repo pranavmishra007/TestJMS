@@ -1,0 +1,23 @@
+package test.activemq;
+
+import javax.jms.JMSException;
+
+import org.slf4j.Logger;
+
+import test.activemq.sender.ActiveMQQueueSender;
+
+public class MQApplication {
+	
+	public static void main(String[] args) {
+		
+		ActiveMQQueueSender sender = new ActiveMQQueueSender("tcp://localhost:61616","admin","admin");
+		
+		try {
+			sender.sendMessage("my queue", "Hi, I am chatting through Active MQ");
+		} catch (JMSException e) {
+			LOG
+			e.printStackTrace();
+		}
+	}
+
+}
